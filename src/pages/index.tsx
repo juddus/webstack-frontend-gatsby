@@ -7,10 +7,6 @@ const CountPrompt = styled.p`
   color: blue;
 `;
 
-const Button = styled.button`
-  color: red;
-`;
-
 const Home: React.FC = () => {
   const [count, setCount] = React.useState(0);
 
@@ -19,7 +15,12 @@ const Home: React.FC = () => {
       <SEO title={'Home'} />
       <div>
         <CountPrompt>Count: {count}</CountPrompt>
-        <Button onClick={() => setCount(count + 1)}>+</Button>
+        <button
+          className={'py-2 px-4 bg-gray-200 text-gray-900 text-xl'}
+          onClick={() => setCount(count + 1)}
+        >
+          Increase Count
+        </button>
       </div>
     </Layout>
   );
