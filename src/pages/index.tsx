@@ -15,12 +15,7 @@ const Home: React.FC = () => {
       <SEO title="Home" />
       <div>
         <CountPrompt>Count: {count}</CountPrompt>
-        <button
-          className="py-2 px-4 bg-gray-200 text-gray-900 text-xl"
-          onClick={() => setCount(count + 1)}
-        >
-          Increase Count
-        </button>
+        <button onClick={() => setCount(count + 1)}>Increase Count</button>
       </div>
     </Layout>
   );

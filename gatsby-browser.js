@@ -1,1 +1,2 @@
-import './src/styles/global.css';
+import 'modern-css-reset';
+import './src/styles/colours.css';
