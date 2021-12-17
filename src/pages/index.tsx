@@ -7,6 +7,8 @@ const CountPrompt = styled.p`
   color: blue;
 `;
 
+console.log(process.env.GATSBY_API_URL);
+
 const Home: React.FC = () => {
   const [count, setCount] = React.useState(0);
 
